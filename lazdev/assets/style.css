@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.modal__inner {
+    max-width: 600px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.modal__profile {
+    display: flex;
+    justify-self: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.modal__info p {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.modal__info p span {
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+    margin-left: 6px;
+}
+.modal__info-group {
+    display: flex;
+}
+.modal__info-group p:first-child {
+    margin-right: 25px;
+}
+.modal__img {
+    position: relative;
+    margin-right: 75px;
+    max-width: 120px;
+    max-height: 120px;
+}
+/* .modal__img::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    right: -10px;
+    width: 110px;
+    height: 110px;
+    border-radius: 12px;
+    background-color: #c2d4e7;
+} */
+.modal__img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 10px 10px 0 rgb(206, 226, 255);
+    overflow: hidden;
+}
+.modal__info {
+    font-size: 14px;
+}
+.modal__description {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #585858;
+}
+.modal__footer {
+    display: flex;
+    justify-content: space-around;
+}
+.modal__close-button {
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: #AFC6FF;
+    box-shadow: 0 4px 0 rgb(206, 226, 255);
+    cursor: pointer;
+    transition: .1s;
+}
+.modal__close-button:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+.modal__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #c2d4e7;
+}
+.modal__social-link a {
+    color: #000000;
+    text-align: center;
+    line-height: 26px;
+    font-size: 26px;
+}

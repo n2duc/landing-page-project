@@ -1,0 +1,4 @@
+https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css
+https://cdn-uicons.flaticon.com/uicons-soild-rounded/css/uicons-soild-rounded.css
+https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css
+https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js
