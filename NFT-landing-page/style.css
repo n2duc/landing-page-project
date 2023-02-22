@@ -103,6 +103,11 @@ header.header {
     font-weight: 600;
     margin-bottom: 30px;
 }
+.header-content .title span {
+    background: -webkit-linear-gradient(#FDFC47, #24FE41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .header-content .desc {
     font-size: 20px;
     line-height: 32px;
@@ -119,6 +124,12 @@ header.header {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 45px;
+    transition: .3s ease;
+}
+.explore-btn:hover {
+    background: linear-gradient(45deg, #b5ff17, #24FE41);
+    padding: 11px 34px;
+    letter-spacing: 1px;
 }
 .header-static {
     display: flex;
@@ -423,6 +434,12 @@ header.header {
     text-align: center;
     margin-bottom: 20px;
 }
+.feature-title span {
+    background: -webkit-linear-gradient(#FDFC47, #24FE41);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
 .feature-subtitle {
     font-weight: 400;
     font-size: 18px;
@@ -485,8 +502,10 @@ header.header {
     position: relative;
     padding: 24px 30px 24px 21px;
     background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
     display: flex;
     align-items: center;
+    transition: all 0.3s linear;
 }
 .creator-avt {
     position: relative;
@@ -529,7 +548,9 @@ header.header {
     right: 31px;
     bottom: 38px;
 }
-
+.creator-item:hover {
+    box-shadow: rgba(177, 255, 74, 0.766) 0px 0px 6px;
+}
 .view-ranking {
     display: inline-block;
     margin: 0 auto;
@@ -548,6 +569,7 @@ header.header {
 .footer-container {
     display: flex;
     color: #fff;
+    margin-bottom: 30px;
 }
 .footer-end {
     width: 405px;
@@ -587,4 +609,14 @@ header.header {
     font-size: 16px;
     line-height: 30px;
     color: #efefef;
+}
+.copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    background-color: #191919;
+    padding: 10px 0;
+    border-radius: 4px;
 }
