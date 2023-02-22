@@ -10,6 +10,7 @@
 }
 html {
     scroll-behavior: smooth;
+    
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -24,6 +25,16 @@ a {
 }
 ul {
     list-style: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #111111;
+}
+::-webkit-scrollbar-thumb {
+    background: #c8ff50;
+    border-radius: 10px;
 }
 
 .container {
@@ -328,6 +339,7 @@ header.header {
     font-size: 16px;
     line-height: 28px;
     border-radius: 3px;
+    transition: all 0.1s linear;
 }
 .market-category .category:hover {
     border: 1px solid #d5f70a;
@@ -462,12 +474,22 @@ header.header {
     width: 64px;
     height: 64px;
     margin-bottom: 20px;
+    transition: all 0.2s ease;
+}
+.feature-item:hover img {
+    transform: scale(1.2);
 }
 .feature-item p {
     font-weight: 600;
     font-size: 26px;
     line-height: 38px;
     margin-bottom: 11px;
+}
+.feature-item:hover p {
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(163, 255, 3) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 .feature-item span {
     text-align: center;
@@ -609,14 +631,31 @@ header.header {
     font-size: 16px;
     line-height: 30px;
     color: #efefef;
+    transition: all 0.3s linear;
+}
+.footer-content .item:hover .link {
+    color: #e1ffa0;
+    transform: translateX(6px);
 }
 .copyright {
+    position: relative;
+    display: flex;
+    justify-content: center;
     text-align: center;
     color: #fff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     letter-spacing: 4px;
-    background-color: #191919;
+    background-color: #111111;
     padding: 10px 0;
     border-radius: 4px;
+}
+.copyright::after {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 140px;
+    bottom: -20px;
+    border-radius: 2px;
+    background: #111111;
 }
