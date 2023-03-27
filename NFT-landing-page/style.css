@@ -49,7 +49,7 @@ ul {
 .nav-header {
     position: sticky;
     width: 100%;
-    top: 18px;
+    top: -18px;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
@@ -58,6 +58,7 @@ ul {
 .navbar {
     position: sticky;
     display: flex;
+    padding-top: 18px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
